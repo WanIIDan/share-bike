@@ -1,0 +1,60 @@
+.header-wrap {
+
+    .header {
+        line-height: 60px;
+        height: 60px;
+        border-bottom: 1px solid #f9c700;
+
+        div {
+            margin-right: 20px;
+        }
+
+        .username {
+            font-size: 14px;
+            color: #f9c700;
+        }
+
+        .logout {
+            color: #409eff;
+        }
+    }
+
+   .header-detail {
+        padding: 0 20px;
+        line-height: 40px;
+        height: 40px;
+
+        .breadcrumb-title {
+            position: relative;
+            font-size: 18px;
+            width: 12.5%;
+            text-align: center;
+
+            &::after {
+                content: '';
+                display: block;
+                position: absolute;
+                left: 50%;
+                bottom: -24px;
+                transform: translateX(-50%);
+                border: 12px solid transparent;
+                border-top: 12px solid #fff;
+                width: 0;
+                height: 0;
+            }
+        }
+
+        .weather {
+            font-size: 14px;
+            font-weight: 700;
+        }
+
+        .date {
+            font-weight: 600;
+            font-style: 14px;
+            margin-right: 20px;
+        }
+    }
+}
+
+

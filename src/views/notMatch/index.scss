@@ -1,0 +1,26 @@
+.notmatch {
+    background: #fff;
+    padding: 20px;
+
+    .title {
+        font-size: 60px;
+        font-weight: 700;
+        color: #484848;
+    }
+
+    .img-wrap {
+        margin-left: 100px;
+
+        img {
+            display: block;
+        }
+    }
+
+    .notmatch-content {
+        p {
+            color: #333;
+            font-style: 14px;
+            font-weight: 700;
+        }
+    }
+}
