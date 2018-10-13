@@ -23,7 +23,7 @@ export default class NotMatch extends Component {
                     </div>
                 </div>
                 <div className="img-wrap fl">
-                    <img src={notMatchImg} />
+                    <img src={notMatchImg} alt=""/>
                 </div>
             </div>
         )

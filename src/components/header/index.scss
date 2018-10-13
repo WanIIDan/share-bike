@@ -19,6 +19,22 @@
         }
     }
 
+    .common-header {
+        background: #409eff;
+        height: 60px;
+        line-height: 60px;
+        color: #fff;
+
+        div {
+            margin-right: 20px;
+        }
+
+        .logout a{
+            color: #f9c700;
+        }
+    }
+
+
    .header-detail {
         padding: 0 20px;
         line-height: 40px;

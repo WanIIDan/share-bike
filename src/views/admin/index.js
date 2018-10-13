@@ -2,7 +2,7 @@ import React,{Component} from 'react'
 import NavLeft from '../../components/navLeft'
 import Header from '../../components/header'
 import Footer from '../../components/footer'
-import { Row, Col} from 'antd';
+import { Row, Col } from 'antd';
 import './index.scss'
 
 export default class Admin extends Component {
@@ -15,8 +15,10 @@ export default class Admin extends Component {
         return (
             <div className="admin">
                 <Row>
-                    <Col span={4}><NavLeft/></Col>
-                    <Col span={20}>
+                    <Col span={4} className="nav-left-wrap">
+                        <NavLeft/>
+                    </Col>
+                    <Col span={20} style={{height: '100vh', overflow: 'auto'}}>
                         <Header/>
                         <div className="content-wrap">
                             <div className="content">
