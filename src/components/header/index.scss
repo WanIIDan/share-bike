@@ -17,6 +17,10 @@
         .logout {
             color: #409eff;
         }
+
+        .title {
+            margin-bottom: 0;
+        }
     }
 
     .common-header {
@@ -43,7 +47,7 @@
         .breadcrumb-title {
             position: relative;
             font-size: 18px;
-            width: 12.5%;
+            width: 150px;
             text-align: center;
 
             &::after {

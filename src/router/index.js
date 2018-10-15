@@ -7,7 +7,7 @@ import NotMatch from '../views/notMatch';
 import Order from '../views/order/index';
 import OrderDetail from '../views/order/detail';
 import Pie from '../views/echarts/pie';
-import Bar from '../views/echarts/bar';
+// import Bar from '../views/echarts/bar';
 
 export default class Router extends Component {
     render() {

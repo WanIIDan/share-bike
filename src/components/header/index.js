@@ -3,8 +3,9 @@ import { Link } from 'react-router-dom'
 import './index.scss'
 import axios from 'axios'
 import utils from '../../utils'
+import { connect } from 'react-redux'
 
-export default class Header extends Component {
+class Header extends Component {
     state = {
         weather: '',
         time: ''
@@ -49,8 +50,8 @@ export default class Header extends Component {
 
                 {
                     this.props.type == 'common' ? '' : <div className="header-detail clearfix">
-                        <div className="breadcrumb-title fl">
-                            首页
+                        <div className="fl breadcrumb-title">
+                            {this.props.menuText}
                         </div>
                         <div className="weather fr clearfix">
                             <div className="date fl">
@@ -67,3 +68,16 @@ export default class Header extends Component {
         )
     }
 }
+
+// connect 接收两个参数，
+// 一个参数叫做mapStateToProps，
+// 另一个参数叫mapActionToDispatch.
+// 这两个参数都应该是一个函数.
+
+export default connect(
+    function mapStateToProps(state) {
+        return {
+            menuText: state.menuItemText
+        }
+    }
+)(Header)
